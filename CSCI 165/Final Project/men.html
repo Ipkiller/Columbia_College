@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shoe</title>
+    <link rel="stylesheet" href="Costume_of_projectx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="Source/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="window">
+        <div class="fix">
+            <button class="back-btn" onclick="back()"><i class="fa-solid fa-arrow-left"></i></button>
+            <span class="amount">Total:-$ 0.0</span>
+        </div>
+        <div class="con">
+        </div>
+    </div>
+    <div id="blur">
+        <header>
+            <nav>
+                <img src="Source/Images/purepng.com-nike-logologobrand-logoiconslogos-251519940082eoxxs.png" width="5%"
+                    alt="Nike Logo">
+                <table>
+                    <tr>
+                        <td> <a style="text-decoration: none; color: white;" href="Projectx.html">NEW RELEASES</a> </td>
+                        <td class="highlight">MEN</td>
+                        <td>WOMEN</td>
+                        <td><a style="text-decoration: none;
+                        color: white;" href="summary.html">SUMMARY</a></td>
+                        <td><button class="social" onclick="social_media()">ABOUT US
+                        </button><div id="window2">
+                            <ul>
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </ul>
+                        </div></td>
+                        <td class="seprator"></td>
+                        <td class=""><i class="fas fas fa-search"></i></td>
+                        <td><input type="text" placeholder="Search..." id="search_bar"></td>
+                        <td><button class="btn" onclick="popup()"><i class="fas fas fa-cart-plus"></i></button></td>
+                    </tr>
+                </table>
+                <div class="popup"></div>
+            </nav>
+        </header>
+        <main onclick="off()">
+            <div class="bg-of-list">
+                <div id="products"></div>
+            </div>
+        </main>
+    </div>
+    <footer>
+
+        <p><i class="fa-regular fa-copyright"></i> Copyright Since 2023</p>
+    </footer>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="Costume-of-men.css">
+</body>
+
+</html>

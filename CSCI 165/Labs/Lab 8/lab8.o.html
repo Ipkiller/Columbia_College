@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table>
+    <tr>
+<td>Enter Number 1</td><td><input type="text" id="num1" onkeydown= "
+    this.style.backgroundColor='#999999';
+    this.style.color='#ffffff';" onchange="this.style.backgroundColor='#ffffff'; 
+    this.style.color='red';"></td>
+</tr>
+<tr>
+<td>Enter Number 2</td><td><input type="text" id="num2"></td>
+</tr>
+<tr><td colspan="2"><hr></td>
+<tr>
+<td>Result:</td><td><input type="text" id="ss"></td>
+</tr>
+<tr>
+<td>
+<select id="ops">
+<option value="+">+</option> <option value="*">*</option> <option value="-">-</option>
+<option value="/">/</option> <option value="%">%</option> <option value="^">^</option> </select>
+</td>
+<td align="center"><input type="button" value="Calculate" onclick=" 
+var n1,n2,s;
+n1=parseFloat(document.getElementById('num1').value);
+n2=parseFloat(document.getElementById('num2').value);
+if (document.getElementById('ops').value=='+') s=n1+n2;
+else if (document.getElementById('ops').value=='*') s=n1*n2; 
+else if (document.getElementById('ops').value=='-') s=n1-n1;
+else if (document.getElementById('ops').value=='/') s=n1/n2; 
+else if (document.getElementById('ops').value==' % ' ) s=n1%n2; 
+else if (document.getElementById('ops').value=='^') s=n1^n2;
+document.getElementById('ss').value=s;
+"></td>
+</tr>
+</table>
+</body>
+</html>

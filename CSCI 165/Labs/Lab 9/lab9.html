@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="#888888">
+    <div id="circle" style="width: 300px; height: 600px; float: left; position: fixed; margin-left: 100px ; border-radius: 360px; background-color: aqua;">
+    </div>
+    <p style="float: right;" id = "loop1"></p>
+<script>
+var myRGB = new Array('00','22', '44','66','88','aa','bb','dd','ff');
+var hexValue= '';
+var tableContent = "<table width=480>";
+var tableContent1 = '<td width = "80" height = "40" bgcolor = "#';
+var tableContent2 = '" align=" center" valign = "middle">';
+var tableContent3 = ' <input type = "button" value = "#';
+var tableContent4 = '" onclick ="document.getElementById(\'circle\').style.backgroundColor=\'#';
+var tableContent5 = '\' "></input></td>';
+
+for (red = 0; red<9; red++){
+for ( green=0;green<9;green++){
+tableContent+="<tr>";
+for ( blue= 0;blue<9; blue++){
+hexValue = myRGB[red] + myRGB[green] + myRGB[blue];
+tableContent += tableContent1+hexValue+tableContent2;
+tableContent += tableContent3 + hexValue + tableContent4;
+tableContent += hexValue + tableContent5;
+}
+tableContent+="</tr>";
+}
+}
+tableContent+= "</table>";
+document.getElementById('loop1').innerHTML= tableContent;
+</script>
+</body>
+</html>

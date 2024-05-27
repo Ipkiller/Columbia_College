@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="game.js"></script>
+    <style>
+        #p,#r,#s{
+            border: 0;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+    
+</head>
+<body>
+    <center style="margin-top: 15%;">
+    <table border="2" style="font-size: 44px;">
+        <tr>
+            <td>
+                <input type="radio" name="rsp" id="r" onclick="rock()">
+                Rock
+            </td>
+            <td rowspan="3">
+                <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350" height="350" id="disp">
+            </td>
+            <td rowspan="3">
+                Computer Choice
+            </td>
+            <td rowspan="3">
+                <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350" height="350" id="comDisp">
+            </td>
+            </tr>
+             <tr>
+            <td>
+                <input type="radio" name="rsp" id="p" onclick="Paper()">
+                Paper
+            </td>
+             </tr>
+            <tr>
+            <td>
+    <input type="radio" name="rsp" id="s" onclick="Scissor()">
+                Scissor
+            </td>
+            <tr>
+                <td>
+                    <input style="padding: 15px 15px 15px 15px; font-size: 44px;" type="button" value="play" onclick="timer=setInterval (anim2, 150);">
+                    <input  style="padding: 15px 15px 15px 15px; font-size: 44px;" type="button" value="reset" onclick="reset()">
+                    <td colspan="3">
+                        <div style="text-align: center;" id="result">
+                        </div>
+                    </td>
+                </td>
+            </tr>
+        </tr>
+    </table>
+    </center>
+</body>
+</html>

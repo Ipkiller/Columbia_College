@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x=0,y=0,mytimer;
+        let pics=new Array(12);
+        for(i=0;i<12;i++){
+            pics[i]=new Image;
+            pics[i].src="busyimg/busy"+i+".gif";
+        }
+        function animation(){
+            document.images[0].src=pics[x].src;
+            x=(x+1)%12
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+    <img style="margin-top: 20%;
+    height: 150px; width: 150px;" src="busyImg/Busy0.gif"><br>
+    <input type="button" value="start" onclick="mytimer=setInterval(animation,33)">
+    <input type="button" value="stop" onclick="">   
+    </div >
+</body>
+</html>

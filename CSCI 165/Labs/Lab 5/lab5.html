@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        box{
+            position: fixed;
+            background-color: #0F52BA;
+            height: 100px;
+            width: 97%;
+            margin: 0 20px 20px ;
+            z-index: 10;
+        }
+        span{
+            color: aliceblue;
+            border: solid;
+            border-radius: 20px;
+            padding: 6px 6px 6px;
+        }
+        mains{
+            position: absolute;
+            padding-top: 65px;
+            padding-left: 10px;
+        }
+        .parent {
+            text-align: center;
+        }
+        .one {
+             background-color: powderblue;
+             border-radius: 10%;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+        }
+
+        .two {
+            position: relative;
+            top: -350px;
+            left: 100px;
+            background-color: royalblue;
+            border-radius: 10%;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+        }
+
+        .three {
+            position: relative;
+            top: -700px;
+            left: 200px;
+            background-color: sienna;
+            border-radius: 10%;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+        }
+
+        .four {
+            position: relative;
+            top: -1050px;
+            left: 300px;
+            background-color: slateblue;
+            border-radius: 10%;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+            }
+
+    </style>
+</head>
+<body>
+    <box>
+        <mains>
+        <span>Home</span>&nbsp;&nbsp;
+        <span>Columbia College</span>&nbsp;&nbsp;
+        <span>Vancouver</span>&nbsp;&nbsp;
+        <span>About Me</span>&nbsp;&nbsp;
+        <span>Contact Us</span>&nbsp;&nbsp;
+    </mains>
+</box>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<div style="position: sticky;top: 112px;padding: 5px;background-color: #af4c4c; border: 2px solid #af4c4c; z-index: 10; height: 200px; width: 300px; float: right; font-size: 44px;">Sticky</div>
+<div style="height: 200px; width: 300px; background-color: chocolate; float: right; margin-right: 20px; font-size: 44px;"><div> <h1>overflow</h1><br><h1>overflow</h1><br><h1>overflow</h1></div></div>
+<div class="parent">
+    <div class="child one">One position relative</div>
+    <div class="child two">Two position relative</div>
+    <div class="child three">Three position relative</div>
+    <div class="child four">Four position relative</div>
+  </div>
+  <div></div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

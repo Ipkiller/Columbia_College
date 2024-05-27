@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .align {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        #div div,span {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .newText {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="align">
+        <p>Click below to see the magic of Jquery Html Methods</p>
+        <button id="btn">Click Here</button>
+        <p id="Para1">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</p>
+        <p id="Para2" style="display: none;">I ❤️ Canada 🍁.</p>
+        <p id="Para3"></p>
+    </div>
+    <hr>
+    <div class="align" id="div">
+        <p>Click below to find out Descendant, Ancestors, Siblings</p>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+
+        <div id="parent">
+            <div class="ancestor">
+                <span class="descendant">Descendant 1</span>
+                <button class="sibling">Sibling 1</button>
+            </div>
+            <div class="ancestor">
+                <span class="descendant">Descendant 2</span>
+                <button class="sibling">Sibling 2</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#btn").click(function () {
+            $("#Para1").hide();
+
+            $("#Para2").fadeIn();
+
+            $("#Para3").html("Don't You?");
+        });
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(this).closest("div").toggleClass("highlight");
+
+                $(this).find(".descendant").addClass("newText");
+
+                $(this).siblings(".sibling").addClass("highlight");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

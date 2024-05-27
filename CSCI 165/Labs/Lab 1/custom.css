@@ -1,0 +1,31 @@
+/* unvisited link */
+a:link {
+  color: #ffffff;
+    border: transparent;
+    border-radius: 12px;
+    padding: 14px 10px 9px 10px;
+    text-decoration: none;
+    font-size: 10;
+}
+body{
+  background-color: #662549;
+}
+  
+  /* visited link*/
+  a:visited {
+    color: #ae445a;
+  }
+  /* mouse over link */
+  a:hover {
+    color: #04d9ff;
+    background-color: black;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #04d9ff;
+    background-color: black;
+  }
+  th{
+    color: #f39f5a;
+  }

@@ -1,0 +1,38 @@
+/* unvisited link */
+a:link {
+  color: #e8bcb9;
+    border: transparent;
+    border-radius: 12px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    font-size: 10;
+ }
+ body{
+  background-color: #662549;
+ }
+ 
+ th{
+  text-align: center;
+ }
+  /* visited link*/
+  a:visited {
+    color: #ae445a;
+    background-color: black;
+  }
+  /* mouse over link */
+  a:hover {
+    color: #04d9ff;
+    background-color: black;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #04d9ff;
+    background-color: black;
+  }
+  th{
+    color: #f39f5a;
+  }

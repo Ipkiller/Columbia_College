@@ -1,0 +1,52 @@
+.para{
+    padding-top: 98px;
+    padding-left: 95px;
+}
+button{
+    padding: 10px 10px 10px 10px;
+    background-color: #662549;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#animation1{
+    width: 100px;
+    height: 100px;
+    background-color: #e76f51;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+@keyframes example{ 
+    0% {
+        position: absolute;
+        background-color: #e76f51;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        position: absolute;
+        background-color: #00ffe1;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        position: absolute;
+        background-color: #ffb700;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        position: absolute;
+        background-color: rgb(255, 115, 0);
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        position: absolute;
+        background-color: #ff3300;
+        left: 0px;
+        top: 10px;
+    }
+}

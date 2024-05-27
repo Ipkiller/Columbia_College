@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+<body>
+    <script>
+        function convert(degree,typedegree){
+            if(typedegree=='c') return degree*1.8+32;
+            else if(typedegree=='f') return (degree-32)/1.8;
+            else return ;
+        }
+    </script>
+    Enter Celsius: <input type="text" id="c1" onchange="
+    document.getElementById('c2').value=convert(this.value,'c');"><br>
+    Enter Degree: <input type="text" id="c2" onchange="
+    document.getElementById('c1').value=convert(this.value,'f');"><br>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shoe</title>
+    <link rel="stylesheet" href="Costume_of_projectx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="Source/jquery-3.7.1.min.js"></script>
+    <style>
+        
+        h1 {
+            font-size: 15pt;
+            color: #20bcd5;
+            text-align: center;
+            padding: 18px 0 18px 0;
+            margin: 0 0 10px 0;
+        }
+
+        h1 span {
+            border: 4px dashed #20bcd5;
+            padding: 10px;
+        }
+
+        p {
+            padding: 0;
+            margin: 30px;
+
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 15px;
+            margin: 50px 20% 50px 20%;
+            border-radius: 20px;
+            font-family: 'Handlee', cursive;
+            word-spacing: 3px;
+            font-size: 13pt;
+            height: 50%;
+        }
+
+        .quote {
+            font-size: 12pt;
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="window">
+        <div class="fix">
+            <button class="back-btn" onclick="back()"><i class="fa-solid fa-arrow-left"></i></button>
+            <span class="amount">Total:-$ 0.0</span>
+        </div>
+        <div class="con">
+        </div>
+    </div>
+    <div id="blur">
+        <header>
+            <nav>
+                <img src="Source/Images/purepng.com-nike-logologobrand-logoiconslogos-251519940082eoxxs.png" width="5%"
+                    alt="Nike Logo">
+                <table>
+                    <tr>
+                        <td><a href="Projectx.html" style="text-decoration: none; color: white;">NEW RELEASES</a></td>
+                        <td><a style="text-decoration: none; color: white;" href="men.html">MEN</a></td>
+                        <td>WOMEN</td>
+                        <td><a class="highlight" style="text-decoration: none;
+                        color: white; padding: 5px;" href="summary.html">SUMMARY</a></td>
+                        <td><button class="social" onclick="social_media()">ABOUT US
+                            </button>
+                            <div id="window2">
+                                <ul>
+                                    <li><i class="fa-brands fa-facebook"></i></li>
+                                    <li><i class="fa-brands fa-instagram"></i></li>
+                                    <li><i class="fa-brands fa-twitter"></i></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="seprator"></td>
+                        <td class=""><i class="fas fas fa-search"></i></td>
+                        <td><input type="text" placeholder="Search..." id="search_bar"></td>
+                        <td><button class="btn" onclick="popup()"><i class="fas fas fa-cart-plus"></i></button></td>
+                    </tr>
+                </table>
+                <div class="popup"></div>
+            </nav>
+        </header>
+        <main onclick="off()">
+            <div class="section">
+                <h1><span>Summary</span></h1>
+                <p>
+                    Hey! there it's <strong>us</strong>, the devlopers of this project that is an ecommerce website (Nike Shoe). We have included every required skill such as Html, Css, Javascript and Jquery in this page. If you experience the main page, we have included a nav bar with a menu that is made up of <b>table tag</b>. Css properties have been used to fit the content's position and size. Hyperlinks are included in this nav bar. If you click on the About us option you will see a social media popup which is created by <strong> Order List tag</strong>, and of course, the images have been also taken in this project. In the case of behaviour, Javascript's fuctions, loops, condition statements are also included which help users to add their selected items in the <strong> Cart</strong>. <i>Jquery effects</i> are brought to hide, show, fadeIn, and fadeOut the popup. Jquery html methods are putted to display the html content and to add class to the element. So basically, we have crafted a website that exudes professionalism through its appearance and demonstrates good behavior in its design and functionality.
+                </p>
+                <p class="quote">"Amrit Singh"<br> "Mannat Singh Dhillon"</p>
+            </div>
+        </main>
+    </div>
+    <footer>
+
+        <p><i class="fa-regular fa-copyright"></i> Copyright Since 2023</p>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+
+</html>

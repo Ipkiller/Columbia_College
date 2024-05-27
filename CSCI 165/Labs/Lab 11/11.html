@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id='animation1'></div>
+  <style>
+    #animation1 {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      position: absolute;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: 3;
+      animation-direction: alternate;
+    }
+
+    @keyframes example {
+      0% {
+        background-color: orange;
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        background-color: blueviolet;
+        left: 150px;
+        top: 0;
+      }
+
+      50% {
+        background-color: brown;
+        left: 200px;
+        top: 200px;
+      }
+
+      75% {
+        background-color: blue;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <div style="position:fixed; left:300px; top: 10px;">
+    <button>Click me </button>
+    <p> This is lab 11 </p>
+  </div>
+  <script src="jquery-3.7.1.min"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("p").toggle();
+      });
+    });
+  </script>
+</body>
+
+</html>
