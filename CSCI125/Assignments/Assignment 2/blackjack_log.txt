@@ -1,0 +1,27 @@
+Welcome to Blackjack!
+Player rolled: 10 and 10. Total: 20
+Player hits and rolls: 10. Total: 30
+Player busted! Lost $100.
+Player chose to continue.
+Player rolled: 8 and 4. Total: 12
+House hits and rolls: 5. Total: 15
+House hits and rolls: 3. Total: 18
+Player total: 12, House total: 18
+House wins.
+Player chose to continue.
+Player rolled: 10 and 3. Total: 13
+Player hits and rolls: 10. Total: 23
+Player busted! Lost $300.
+Player chose to continue.
+Player rolled: 3 and 8. Total: 11
+Player hits and rolls: 10. Total: 21
+House hits and rolls: 6. Total: 15
+House hits and rolls: 8. Total: 23
+House busted! Player wins $200.
+Player chose to continue.
+Player rolled: 10 and 5. Total: 15
+Player hits and rolls: 2. Total: 17
+Player hits and rolls: 10. Total: 27
+Player busted! Lost $300.
+Player chose to continue.
+Player is out of money. Game over.

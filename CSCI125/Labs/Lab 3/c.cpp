@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 using namespace std;
 
 // function declaration
@@ -18,17 +19,33 @@ void displayMenu()
 
 void depositMoney(double &balance, double amount)
 {
-    balance += amount;
+    if (amount < 0)
+    {
+        cout << "Invalid amount. Deposit failed." << endl;
+    }
+    else
+    {
+        balance += amount;
+        cout << "$" << amount << " deposited successfully." << endl;
+    }
 }
 
 void withdrawMoney(double &balance, double amount)
 {
-    balance -= amount;
+    if (balance >= amount)
+    {
+        balance -= amount;
+        cout << "$" << amount << " withdrawn successfully." << endl;
+    }
+    else
+    {
+        cout << "Insufficient balance. Withdrawal failed" << endl;
+    }
 }
 
 void checkBalance(double balance)
 {
-    cout << "Your balance is: " << balance << endl;
+    cout << "Your current balance is: $" << balance << endl;
 }
 
 void processChoice(
@@ -41,7 +58,7 @@ void processChoice(
 
     case 1:
 
-        cout << "Enter amount to deposit: ";
+        cout << "Enter amount to deposit: $";
 
         cin >> amount;
 
@@ -51,7 +68,7 @@ void processChoice(
 
     case 2:
 
-        cout << "Enter amount to withdraw: ";
+        cout << "Enter amount to withdraw: $";
 
         cin >> amount;
 
@@ -67,7 +84,8 @@ void processChoice(
 
     case 4:
 
-        cout << "Exiting the program...\n";
+        // Exit message
+        cout << "Exiting the program. Goodbye! " << endl;
 
         break;
 
@@ -86,19 +104,22 @@ int main()
 
     do
     {
-
         displayMenu();
 
         cout << "Enter your choice: ";
-
         cin >> choice;
+
+        if (cin.fail())
+        {
+            cin.clear();                                        
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
+            cout << "Invalid input. Please enter a number." << endl;
+            continue; 
+        }
 
         processChoice(choice, balance);
 
     } while (choice != 4); // 4 = Exit
-
-    // Exit message
-    cout << "Exit" << endl;
 
     return 0;
 }
